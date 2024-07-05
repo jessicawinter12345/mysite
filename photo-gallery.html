@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - My Online Diary</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="load-sidebar.js" defer></script>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="sidebar"></div> <!-- Sidebar will be loaded here -->
+        <main class="content">
+            <h1>Photo Gallery</h1>
+            <div class="gallery">
+                <!-- Add your images here -->
+                <img src="path/to/image1.jpg" alt="Description of image 1">
+                <img src="path/to/image2.jpg" alt="Description of image 2">
+                <img src="path/to/image3.jpg" alt="Description of image 3">
+                <!-- Add more images as needed -->
+            </div>
+        </main>
+    </div>
+</body>
+</html>
